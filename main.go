@@ -1,8 +1,17 @@
 // main
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
-	fmt.Println("Cert")
+
+	data, err := os.ReadFile("testdata/server.crt")
+	if err != nil {
+		fmt.Println("error")
+	}
+	fmt.Println(string(data))
+
 }

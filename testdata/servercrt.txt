@@ -1,0 +1,3 @@
+$ openssl x509 -req -days 3650 -signkey server.key < server.csr > server.crt
+Certificate request self-signature ok
+subject=C = aa, ST = sora, L = daichi, O = onigiri, OU = konbu, CN = picnic
